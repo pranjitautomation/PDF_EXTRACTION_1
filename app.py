@@ -25,6 +25,8 @@ class PDFEXTRACTION:
         A method is created for initialize the filename and the password
 
         """
+        if "image" not in list(os.listdir("./")):
+            os.system("mkdir image")
         self.filename = filename
         # self.pass_word = pass_word
 
