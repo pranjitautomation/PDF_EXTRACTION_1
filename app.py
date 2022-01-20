@@ -28,7 +28,6 @@ class PDFEXTRACTION:
         if "image" not in list(os.listdir("./")):
             os.system("mkdir image")
         self.filename = filename
-        # self.pass_word = pass_word
 
     def decrypt(self, password):
         """
