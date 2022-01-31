@@ -175,7 +175,7 @@ class PDFEXTRACTION:
         Pass Pageno of which you want to extract
         For extracting from all the pages leave it blank
         """
-
+        obj.check_directory()
         pop_path = ".\\poppler-21.11.0\\Library\\bin"
 
         if platform.system() == "Linux":
@@ -267,7 +267,6 @@ obj = PDFEXTRACTION(FILENAME)
 
 obj.decrypt(PASSWORD)
 obj.extracting_images(2)
-obj.check_directory()
 obj.extracting_text(2)
 
 obj.table_pdf()
